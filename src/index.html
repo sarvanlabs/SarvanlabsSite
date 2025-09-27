@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sarvan Labs</title>
+
+  <script>
+    // inject common head elements
+    (async () => {
+      try {
+        const res = await fetch('./common-head.html', { cache: 'no-cache' });
+        const html = await res.text();
+        document.head.insertAdjacentHTML('beforeend', html);
+      } catch (e) {
+        console.error('Failed to load common head:', e);
+      }
+    })();
+  </script>
+  <!-- <script defer src="../assets/js/common-head.js" data-include="/common-head.html"></script> -->
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <div data-include="./header.html"></div>
+    <!-- /header -->
+    <section class="wrapper bg-gradient-primary">
+      <div class="container pt-10 pt-md-14">
+        <div class="row gx-2 gy-10 align-items-center">
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start order-2 order-lg-0" data-cues="slideInDown" data-group="page-title" data-delay="600">
+            <h1 class="display-1 mb-5 mx-md-10 mx-lg-0">We empowers businesses with <br /><span class="typer text-primary" data-delay="100" data-words="intelligent automation.,secure systems.,high-performance engineering practices."></span><span class="cursor text-primary" data-owner="typer"></span></h1>
+            <p class="lead fs-23 mb-7">We specialize in AI automation, security architecture, DevOps pipelines, and enabling engineering teams with modern best practices.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start mb-4" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+              <span><a class="btn btn-lg btn-primary rounded-pill me-2 scroll" href="#demos">Explore our services</a></span>
+            </div>
+          </div>
+          <!-- /column -->
+          <div class="col-lg-6 ms-auto position-relative">
+            <div class="row g-4">
+              <div class="col-4 d-flex flex-column ms-auto" data-cues="fadeIn" data-group="col-start" data-delay="900">
+                <div class="ms-auto mt-6"><img class="img-fluid rounded shadow-lg" src="../assets/img/demos/landing-ai-automation-no-text.png" srcset="../assets/img/demos/landing-ai-automation-no-text.png 2x" alt="" /></div>
+                <div class="ms-auto mt-4"><img class="img-fluid rounded shadow-lg" src="../assets/img/demos/landing-devOps.png" srcset="../assets/img/demos/landing-devOps.png 2x" alt="" /></div>
+                <!-- <div class="ms-auto mt-4"><img class="img-fluid rounded shadow-lg" src="../assets/img/demos/vc3.jpg" srcset="../assets/img/demos/vc3@2x.jpg 2x" alt="" /></div> -->
+              </div>
+              <!-- /column -->
+              <div class="col-4" data-cues="fadeIn" data-group="col-middle">
+                <div><img class="w-100 img-fluid rounded shadow-lg" src="../assets/img/demos/landing-eng-enablement-no-text.png" srcset="../assets/img/demos/landing-eng-enablement-no-text.png 2x" alt="" /></div>
+                <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="../assets/img/demos/landing-security.png" srcset="../assets/img/demos/landing-security.png 2x" alt="" /></div>
+                <div><img class="w-100 img-fluid rounded shadow-lg mt-4" src="../assets/img/demos/landing-bug-fix.png" srcset="../assets/img/demos/landing-bug-fix.png 2x" alt="" /></div>
+              </div>
+              <!-- /column -->
+              <div class="col-4 d-flex flex-column" data-cues="fadeIn" data-group="col-end" data-delay="900">
+                <div class="mt-8"><img class="img-fluid rounded shadow-lg" src="../assets/img/demos/landing-ci-cd.png" srcset="../assets/img/demos/landing-ci-cd.png 2x" alt="" /></div>
+                <div class="mt-4 mb-10"><img class="img-fluid rounded shadow-lg" src="../assets/img/demos/landing-llm.png" srcset="../assets/img/demos/landing-llm.png 2x" alt="" /></div>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <!-- <div class="position-relative mt-n20 mb-20" data-cue="fadeIn" data-delay="1800">
+              <div class="btn btn-circle btn-fuchsia pe-none ripple position-absolute counter-wrapper flex-column d-none d-xxl-flex" style="bottom: 0; right: -8%; width: 120px; height: 120px;">
+                <h3 class="fs-26 text-white mt-n1 mb-0">NO</h3>
+                <p>jQuery</p>
+              </div>
+            </div> -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light" id="demos">
+      <div class="container py-14 py-md-18 pb-md-19">
+        <div class="row mb-10">
+          <div class="col-md-9 mx-auto">
+            <div class="counter-wrapper">
+              <h3 class="fs-70 mb-3 text-primary text-center counter">4</h3>
+            </div>
+            <h2 class="display-3 mb-3 text-center mb-0">Sarvan Labs: AI automation, Security & compliance, DevOps & cloud, and Engineering enablement—so you ship faster, safer, smarter.</h2>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="demos-wrapper">
+          <h2 class="fs-16 text-uppercase text-muted mb-6 text-center">Our Services</h2>
+          <div class="demo mb-10" id="service-ai-automation">
+            <div class="card bg-soft-grape">
+              <div class="card-body px-4 px-md-8 ps-xl-12 py-0 overflow-hidden">
+                <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
+                  <div class="col-lg-7">
+                    <div class="row gx-4 gx-md-7">
+                      <div class="col-lg-10">
+                        <figure class="itooltip itooltip-grape my-9">
+                          <a href="./ai_automation.html">
+                            <img class="shadow-lg rounded-top rounded-bottom" src="../assets/img/demos/ai_automation_detail_section.png" srcset="../assets/img/demos/ai_automation_detail_section.png 2x" data-cue="fadeIn" data-delay="300" alt="">
+                          </a>
+                        </figure>
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /column -->
+                  <div class="col-lg-5 d-none d-lg-block">
+                    <h2 class="post-title fs-30 mb-4">AI Automation</h2>
+                    <ul class="icon-list bullet-grape row ms-0 gy-2">
+                      <span>Integrate machine learning and AI workflows to </span>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Automate decisions</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Automate operations</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Automate insights</span></li>
+                    </ul>
+                    <a href="./ai_automation.html" class="btn btn-sm btn-grape rounded-pill mt-1">See More</a>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!-- /.project -->
+          <div class="demo mb-10" id="service-ci-cd-devops">
+            <div class="card bg-soft-fuchsia">
+              <div class="card-body px-4 px-md-8 ps-xl-12 py-0 overflow-hidden">
+                <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
+                  <div class="col-lg-7">
+                    <div class="row gx-4 gx-md-7">
+                      <div class="col-lg-10">
+                        <figure class="itooltip itooltip-grape my-9">
+                          <a href="./cicd_devops.html">
+                            <img class="shadow-lg rounded-top rounded-bottom" src="../assets/img/demos/ci_cd_devops_detail_section.png" srcset="../assets/img/demos/ci_cd_devops_detail_section.png 2x" data-cue="fadeIn" data-delay="300" alt="">
+                          </a>
+                        </figure>
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /column -->
+                  <div class="col-lg-5 d-none d-lg-block">
+                    <h2 class="post-title fs-30 mb-4">CI/CD & DevOps</h2>
+                    <ul class="icon-list bullet-fuchsia row ms-0 gy-2">
+                      <span>Deliver fast and safely with</span>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Automated Pipelines</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Infrastructure as Code</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Kubernetes</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Cost-optimized Cloud Setups</span></li>
+                    </ul>
+                    <a href="./cicd_devops.html" class="btn btn-sm btn-fuchsia rounded-pill mt-1">See More</a>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!-- /.project -->
+          <div class="demo mb-10" id="service-security-compliance">
+            <div class="card bg-soft-purple">
+              <div class="card-body px-4 px-md-8 ps-xl-12 py-0 overflow-hidden">
+                <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
+                  <div class="col-lg-7">
+                    <div class="row gx-4 gx-md-7">
+                      <div class="col-lg-10">
+                        <figure class="itooltip itooltip-grape my-9">
+                          <a href="./security.html">
+                            <img class="shadow-lg rounded-top rounded-bottom" src="../assets/img/demos/security_complaince_detail_section.png" srcset="../assets/img/demos/security_complaince_detail_section.png 2x" data-cue="fadeIn" data-delay="300" alt="">
+                          </a>
+                        </figure>
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /column -->
+                  <div class="col-lg-5 d-none d-lg-block">
+                    <h2 class="post-title fs-30 mb-4">Security & Compliance</h2>
+                    <ul class="icon-list bullet-purple row ms-0 gy-2">
+                      <span>Secure your systems with</span>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Robust Authentication</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Threat Detection</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Secure APIs</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Regulatory Readiness</span></li>
+                    </ul>
+                    <a href="./security.html" class="btn btn-sm btn-purple rounded-pill mt-1">See More</a>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!-- /.project -->
+          <div class="demo mb-10" id="service-eng-enablement">
+            <div class="card bg-soft-sky">
+              <div class="card-body px-4 px-md-8 ps-xl-12 py-0 overflow-hidden">
+                <div class="row gx-md-8 gx-xl-12 d-flex align-items-center">
+                  <div class="col-lg-7">
+                    <div class="row gx-4 gx-md-7">
+                      <div class="col-lg-10">
+                        <figure class="itooltip itooltip-grape my-9">
+                          <a href="./eng_enablement.html">
+                            <img class="shadow-lg rounded-top rounded-bottom" src="../assets/img/demos/enginerring_enablement_detail_section.png" srcset="../assets/img/demos/enginerring_enablement_detail_section.png 2x" data-cue="fadeIn" data-delay="300" alt="">
+                          </a>
+                        </figure>
+                      </div>
+                      <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /column -->
+                  <div class="col-lg-5 d-none d-lg-block">
+                    <h2 class="post-title fs-30 mb-4">Engineering Enablement</h2>
+                    <ul class="icon-list bullet-sky row ms-0 gy-2">
+                      <span>Train your tech teams in </span>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Modern Architecture</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Artificial Intelligence</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Cloud-native Development</span></li>
+                      <li class="col-md-6"><span><i class="uil uil-check"></i></span><span>Scalable Backend Systems</span></li>
+                    </ul>
+                    <a href="./eng_enablement.html" class="btn btn-sm btn-sky rounded-pill mt-1">See More</a>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!-- /.project -->
+        </div>
+        <!-- /.demos-wrapper -->
+      </div>
+      <!-- /.container -->
+      <div class="overflow-hidden">
+        <div class="divider text-soft-primary mx-n2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+            <path fill="currentColor" d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z" />
+          </svg>
+        </div>
+      </div>
+      <!-- /.overflow-hidden -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-gradient-primary">
+      <div class="container pt-7 pt-md-10 pb-14 pb-md-17">
+        <div class="row mb-8 text-center">
+          <div class="col-md-11 col-lg-10 col-xl-8 col-xxl-7 mx-auto">
+            <img src="../assets/img/logo/final-logo-short-light-transparent.png" srcset="../assets/img/logo/final-logo-short-light-transparent.png 4x" alt="" />
+            <h2 class="display-3 mt-3 mb-3 mb-0 px-lg-10 px-xl-0">Save your time and money by choosing Sarvan Labs for your business.</h2>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-xl-8 col-xxl-7 mx-auto">
+            <div class="row align-items-center counter-wrapper gy-6 text-center">
+              <div class="col-md-4">
+                <h3 class="counter fs-50 text-primary mb-1">25+</h3>
+                <p class="fs-18 mb-0">Happy Clients</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4">
+                <h3 class="counter fs-50 text-primary mb-1">30+</h3>
+                <p class="fs-18 mb-0">Projects Successfully completed</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4">
+                <h3 class="counter fs-50 text-primary mb-1">100%</h3>
+                <p class="fs-18 mb-0">Success rate</p>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-20 pt-md-14 pb-md-22 text-center">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <h1 class="display-1 mb-3">Our Pricing</h1>
+            <p class="lead mb-0 px-xl-10 px-xxl-13">We offer great prices, premium products and quality service for your business.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="wrapper">
+      <div class="container pb-14 pb-md-16">
+        <div class="pricing-wrapper position-relative mt-n18 mt-md-n21 mb-12 mb-md-15">
+          <div class="shape bg-dot primary rellax w-16 h-18" data-rellax-speed="1" style="top: 2rem; right: -2.4rem;"></div>
+          <div class="shape rounded-circle bg-line red rellax w-18 h-18 d-none d-lg-block" data-rellax-speed="1" style="bottom: 0.5rem; left: -2.5rem;"></div>
+          <div class="pricing-switcher-wrapper switcher">
+            <p class="mb-0 pe-3">Monthly</p>
+            <div class="pricing-switchers">
+              <div class="pricing-switcher pricing-switcher-active"></div>
+              <div class="pricing-switcher"></div>
+              <div class="switcher-button bg-primary"></div>
+            </div>
+            <p class="mb-0 ps-3">Yearly</p>
+          </div>
+          <div class="row gy-6 mt-3 mt-md-5">
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing card text-center">
+                <div class="card-body">
+                  <img src="../assets/img/icons/lineal/shopping-basket.svg" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Basic Plan</h4>
+                  <div class="prices text-dark">
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">9</span> <span class="price-duration">mo</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">99</span> <span class="price-duration">yr</span></div>
+                  </div>
+                  <!--/.prices -->
+                  <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
+                    <li><i class="uil uil-check"></i><span><strong>1</strong> Project </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>100K</strong> API Access </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>100MB</strong> Storage </span></li>
+                    <li><i class="uil uil-times bullet-soft-red"></i><span> Weekly <strong>Reports</strong> </span></li>
+                    <li><i class="uil uil-times bullet-soft-red"></i><span> 7/24 <strong>Support</strong></span></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary rounded-pill">Choose Plan</a>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-lg-4 popular">
+              <div class="pricing card text-center">
+                <div class="card-body">
+                  <img src="../assets/img/icons/lineal/home.svg" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Premium Plan</h4>
+                  <div class="prices text-dark">
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">19</span> <span class="price-duration">mo</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">199</span> <span class="price-duration">yr</span></div>
+                  </div>
+                  <!--/.prices -->
+                  <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
+                    <li><i class="uil uil-check"></i><span><strong>5</strong> Projects </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>100K</strong> API Access </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>200MB</strong> Storage </span></li>
+                    <li><i class="uil uil-check"></i><span> Weekly <strong>Reports</strong></span></li>
+                    <li><i class="uil uil-times bullet-soft-red"></i><span> 7/24 <strong>Support</strong></span></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary rounded-pill">Choose Plan</a>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+              <div class="pricing card text-center">
+                <div class="card-body">
+                  <img src="../assets/img/icons/lineal/briefcase-2.svg" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                  <h4 class="card-title">Corporate Plan</h4>
+                  <div class="prices text-dark">
+                    <div class="price price-show"><span class="price-currency">$</span><span class="price-value">49</span> <span class="price-duration">mo</span></div>
+                    <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">499</span> <span class="price-duration">yr</span></div>
+                  </div>
+                  <!--/.prices -->
+                  <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
+                    <li><i class="uil uil-check"></i><span><strong>20</strong> Projects </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>300K</strong> API Access </span></li>
+                    <li><i class="uil uil-check"></i><span><strong>500MB</strong> Storage </span></li>
+                    <li><i class="uil uil-check"></i><span> Weekly <strong>Reports</strong></span></li>
+                    <li><i class="uil uil-check"></i><span> 7/24 <strong>Support</strong></span></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary rounded-pill">Choose Plan</a>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.pricing -->
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!--/.pricing-wrapper -->
+        <div class="row gx-3 gy-10 mb-15 mb-md-18 align-items-center">
+          <div class="col-lg-6">
+              <img class="img-fluid" src="../assets/img/demos/ai_automation_contact_us_enhance.png" srcset="../assets/img/demos/ai_automation_contact_us_enhance.png 2x" data-cue="fadeIn" data-delay="300" alt="" />
+          </div>
+          <!--/column -->
+          <div class="col-lg-5 offset-lg-1">
+            <h2 class="fs-16 text-uppercase text-gradient gradient-1 mb-3">Contact Us</h2>
+            <h3 class="display-4 mb-8">Got any questions? Don't hesitate to get in touch.</h3>
+            <div class="d-flex flex-row">
+              <div>
+                <img src="../assets/img/icons/solid/pin.svg" class="svg-inject icon-svg icon-svg-xs solid-duo text-grape-fuchsia mt-1 me-4" style="width: 1.5rem; height: 1.5rem;" alt="" />
+              </div>
+              <div>
+                <h5 class="mb-0">Address</h5>
+                <address>E-334, Mangalam Aangan Prime, Mahapura, Jaipur, India</address>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div>
+                <img src="../assets/img/icons/solid/rotary.svg" class="svg-inject icon-svg icon-svg-xs solid-duo text-grape-fuchsia mt-1 me-4" style="width: 1.5rem; height: 1.5rem;" alt="" />
+              </div>
+              <div>
+                <h5 class="mb-0">Phone</h5>
+                <p>+91-8265892959</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div>
+                <img src="../assets/img/icons/solid/emails.svg" class="svg-inject icon-svg icon-svg-xs solid-duo text-grape-fuchsia mt-1 me-4" style="width: 1.5rem; height: 1.5rem;" alt="" />
+              </div>
+              <div>
+                <h5 class="mb-0">E-mail</h5>
+                <p class="mb-0"><a href="mailto:contact@sarvanlabs.com" class="link-body">contact@sarvanlabs.com</a></p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+  <div data-include="./footer.html"></div>
+  <script src="../assets/js/include.js" defer></script>
+  <script src="../assets/js/header.js" defer></script>
+  
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>
