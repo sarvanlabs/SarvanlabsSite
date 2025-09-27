@@ -22834,16 +22834,16 @@ figure img {
   -webkit-mask-size: auto auto;
 }
 .img-mask.mask-1 img {
-  -webkit-mask-image: url(../.../assets/img/svg/blob.svg);
-  mask-image: url(../.../assets/img/svg/blob.svg);
+  -webkit-mask-image: url(../../assets/img/svg/blob.svg);
+  mask-image: url(../../assets/img/svg/blob.svg);
 }
 .img-mask.mask-2 img {
-  -webkit-mask-image: url(../.../assets/img/svg/hex.svg);
-  mask-image: url(../.../assets/img/svg/hex.svg);
+  -webkit-mask-image: url(../../assets/img/svg/hex.svg);
+  mask-image: url(../../assets/img/svg/hex.svg);
 }
 .img-mask.mask-3 img {
-  -webkit-mask-image: url(../.../assets/img/svg/blob2.svg);
-  mask-image: url(../.../assets/img/svg/blob2.svg);
+  -webkit-mask-image: url(../../assets/img/svg/blob2.svg);
+  mask-image: url(../../assets/img/svg/blob2.svg);
 }
 .table:not(.table-borderless) tbody {
   border-top-width: 1px !important;
