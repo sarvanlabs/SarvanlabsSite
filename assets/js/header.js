@@ -10,6 +10,7 @@
 
     document.querySelectorAll('a[data-home-href]').forEach(a => {
       a.setAttribute('href', a.getAttribute('data-home-href'));
+      a.classList.add('scroll');
     });
   }
 
